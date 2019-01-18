@@ -1,0 +1,25 @@
+.button{
+    display: inline-block;
+    vertical-align: top;
+    padding: 15px 37px 14px;
+    font-weight: 500;
+    font-size: 15px;
+    border-radius: 2px;
+    cursor: pointer;
+    text-align: center;
+
+    @include transition(all);
+}
+.button:hover{
+	text-decoration: none;
+}
+.button:active{
+    opacity: .8;
+}
+.button-border{
+    border: 1px solid #80b450;
+
+    &:hover{
+        background: #80b450;
+    }
+}

@@ -1,0 +1,57 @@
+.footer-wrapper{
+	background: $bgDarkColor;
+	color: $textLightColor;
+	margin-top: 207px;
+	text-align: center;
+	padding: 48px 0 8px;
+}
+.footer-nav{
+
+}
+.footer-nav-list{
+	font-size: 14px;
+	text-transform: uppercase;
+	margin-bottom: 33px;
+}
+.footer-nav-list-item{
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 22px;
+}
+.footer-nav-link{}
+
+.footer-socials{
+	margin-bottom: 40px;
+}
+.footer-social-button{
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+	width: 54px;
+	height: 54px;
+	border-radius: 50%;
+	background: rgba(255,255,255,.1);
+	margin: 0 12px;
+	@include transition(all);
+
+	&::before{
+		content: '';
+		@extend %imageCenter;
+		width: 0;
+		height: 0;
+		border-radius: 50%;
+	    box-shadow: 0 0 40px 12px #fff;
+	    opacity: .3;
+	}
+	&:hover{
+		background: rgba(255,255,255,.2);
+	}
+	.icon{
+		@extend %imageCenter;
+	}
+}
+.footer-copy{
+	font-size: 12px;
+	letter-spacing: -.3px;
+	margin-bottom: 40px;
+}
